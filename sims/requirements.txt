@@ -1,0 +1,6 @@
+numpy>=1.24
+psutil>=5.9
+
+# optional: measure_memory_blowup.py loads the real whisper base model if this
+# is installed, otherwise it falls back to a big numpy array
+# faster-whisper>=1.0
