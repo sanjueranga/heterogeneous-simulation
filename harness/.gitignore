@@ -1,0 +1,6 @@
+.env
+_data/
+repro.sqlite3
+videos_in/*.mp4
+__pycache__/
+*.pyc

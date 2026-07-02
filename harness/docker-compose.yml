@@ -1,0 +1,75 @@
+# redis broker, postgres, a driver container (web) and two celery workers.
+# worker_heavy has the memory/cpu limits. Knobs come from .env.
+# docker compose up -d --build
+
+services:
+  redis:
+    image: redis:7-alpine
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-repro}
+      POSTGRES_USER: ${POSTGRES_USER:-repro}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-repro}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  web:
+    build: .
+    env_file: .env
+    environment:
+      RESULTS_DIR: /data/results
+      CLIP_DIR: /data/clips
+    depends_on: [db, redis]
+    volumes:
+      - ./:/app
+      - ./_data:/data
+    # wait for the db, migrate, then sit idle so we can exec commands into it
+    command: >
+      sh -c "until pg_isready -h db -U ${POSTGRES_USER:-repro} >/dev/null 2>&1; do sleep 1; done;
+             python manage.py makemigrations pipeline --noinput &&
+             python manage.py migrate --noinput &&
+             tail -f /dev/null"
+
+  worker_heavy:
+    build: .
+    env_file: .env
+    environment:
+      RESULTS_DIR: /data/results
+      CLIP_DIR: /data/clips
+    depends_on: [db, redis]
+    volumes:
+      - ./:/app
+      - ./_data:/data
+    # memory cap with no swap, so it really gets OOM-killed at the limit
+    mem_limit: ${MEM_CAP_GB:-5}g
+    memswap_limit: ${MEM_CAP_GB:-5}g
+    cpus: ${HEAVY_CPUS:-2}
+    command: >
+      celery -A config worker -Q video_processing,general
+             -c ${HEAVY_C:-2} -n heavy@%h --loglevel=info
+
+  worker_light:
+    build: .
+    env_file: .env
+    environment:
+      RESULTS_DIR: /data/results
+      CLIP_DIR: /data/clips
+    depends_on: [db, redis]
+    volumes:
+      - ./:/app
+      - ./_data:/data
+    command: >
+      celery -A config worker -Q api_calls
+             -c ${LIGHT_C:-4} -n light@%h --loglevel=info
+
+  flower:
+    image: mher/flower:2.0
+    command: celery --broker=${REDIS_URL:-redis://redis:6379/0} flower --port=5555
+    ports: ["5555:5555"]
+    depends_on: [redis]
+    profiles: ["ui"]   # optional: docker compose --profile ui up flower
+
+volumes:
+  pgdata:

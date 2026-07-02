@@ -1,0 +1,1238 @@
+{
+  "_comment": "SYNTHETIC taxonomy (enlarged to clear Haiku's ~4096-token cache minimum). Generic narrative categories only \u2014 no real product taxonomy, prompts, or business logic.",
+  "version": "synthetic-2",
+  "dimensions": {
+    "tone": [
+      "urgent",
+      "soothing",
+      "neutral",
+      "conversational",
+      "playful",
+      "authoritative",
+      "wistful",
+      "confident"
+    ],
+    "angle": [
+      "curiosity",
+      "contrast",
+      "problem",
+      "reveal",
+      "proof",
+      "aspiration",
+      "reassurance",
+      "none"
+    ],
+    "persona": [
+      "novice",
+      "enthusiast",
+      "skeptic",
+      "time_pressed",
+      "value_seeker",
+      "professional",
+      "returning",
+      "unknown"
+    ]
+  },
+  "categories": [
+    {
+      "category_id": "opening_hook",
+      "category_label": "Opening Hook",
+      "description": "The first beat whose only job is to arrest attention before the viewer scrolls away.",
+      "example_keywords": [
+        "so",
+        "now",
+        "because"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "question_open",
+          "subcategory_label": "Question Open",
+          "act": 1,
+          "description": "Question Open: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "so",
+            "then",
+            "here",
+            "look"
+          ]
+        },
+        {
+          "subcategory_id": "bold_claim",
+          "subcategory_label": "Bold Claim",
+          "act": 1,
+          "description": "Bold Claim: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "look",
+            "watch",
+            "now",
+            "this"
+          ]
+        },
+        {
+          "subcategory_id": "cold_scene",
+          "subcategory_label": "Cold Scene",
+          "act": 1,
+          "description": "Cold Scene: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        },
+        {
+          "subcategory_id": "pattern_break",
+          "subcategory_label": "Pattern Break",
+          "act": 1,
+          "description": "Pattern Break: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "because",
+            "imagine",
+            "notice",
+            "try"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "context_setup",
+      "category_label": "Context Setup",
+      "description": "Establishes the situation, stakes, and background that the rest of the segment depends on.",
+      "example_keywords": [
+        "then",
+        "this",
+        "imagine"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "backstory",
+          "subcategory_label": "Backstory",
+          "act": 1,
+          "description": "Backstory: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "look",
+            "watch",
+            "now",
+            "this"
+          ]
+        },
+        {
+          "subcategory_id": "stakes",
+          "subcategory_label": "Stakes",
+          "act": 1,
+          "description": "Stakes: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        },
+        {
+          "subcategory_id": "constraint",
+          "subcategory_label": "Constraint",
+          "act": 1,
+          "description": "Constraint: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "because",
+            "imagine",
+            "notice",
+            "try"
+          ]
+        },
+        {
+          "subcategory_id": "status_quo",
+          "subcategory_label": "Status Quo",
+          "act": 1,
+          "description": "Status Quo: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "try",
+            "see",
+            "point",
+            "result"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "problem_frame",
+      "category_label": "Problem Frame",
+      "description": "Names and sharpens the tension or pain the audience is meant to recognize in themselves.",
+      "example_keywords": [
+        "here",
+        "really",
+        "notice"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "signs",
+          "subcategory_label": "Signs & Symptoms",
+          "act": 1,
+          "description": "Signs & Symptoms: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        },
+        {
+          "subcategory_id": "main_statement",
+          "subcategory_label": "Main Statement",
+          "act": 1,
+          "description": "Main Statement: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "because",
+            "imagine",
+            "notice",
+            "try"
+          ]
+        },
+        {
+          "subcategory_id": "cost_of_inaction",
+          "subcategory_label": "Cost Of Inaction",
+          "act": 1,
+          "description": "Cost Of Inaction: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "try",
+            "see",
+            "point",
+            "result"
+          ]
+        },
+        {
+          "subcategory_id": "relatable",
+          "subcategory_label": "Relatable Moment",
+          "act": 1,
+          "description": "Relatable Moment: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "result",
+            "matter",
+            "change",
+            "start"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "persona_intro",
+      "category_label": "Persona Introduction",
+      "description": "Surfaces who the segment is for and whose point of view frames the narrative.",
+      "example_keywords": [
+        "look",
+        "actually",
+        "try"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "who_for",
+          "subcategory_label": "Who It Is For",
+          "act": 1,
+          "description": "Who It Is For: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "because",
+            "imagine",
+            "notice",
+            "try"
+          ]
+        },
+        {
+          "subcategory_id": "speaker_intro",
+          "subcategory_label": "Speaker Intro",
+          "act": 1,
+          "description": "Speaker Intro: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "try",
+            "see",
+            "point",
+            "result"
+          ]
+        },
+        {
+          "subcategory_id": "shared_identity",
+          "subcategory_label": "Shared Identity",
+          "act": 1,
+          "description": "Shared Identity: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "result",
+            "matter",
+            "change",
+            "start"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "origin_story",
+      "category_label": "Origin Story",
+      "description": "Narrates how the subject, idea, or effort began and why it started at all.",
+      "example_keywords": [
+        "watch",
+        "because",
+        "see"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "beginning",
+          "subcategory_label": "The Beginning",
+          "act": 1,
+          "description": "The Beginning: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "try",
+            "see",
+            "point",
+            "result"
+          ]
+        },
+        {
+          "subcategory_id": "founder",
+          "subcategory_label": "Founder Note",
+          "act": 1,
+          "description": "Founder Note: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "result",
+            "matter",
+            "change",
+            "start"
+          ]
+        },
+        {
+          "subcategory_id": "mission",
+          "subcategory_label": "Mission",
+          "act": 1,
+          "description": "Mission: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "start",
+            "work",
+            "so",
+            "then"
+          ]
+        },
+        {
+          "subcategory_id": "turning_point",
+          "subcategory_label": "Turning Point",
+          "act": 1,
+          "description": "Turning Point: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "then",
+            "here",
+            "look",
+            "watch"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "demonstration",
+      "category_label": "Demonstration",
+      "description": "Shows a process, capability, or behaviour actually happening rather than describing it.",
+      "example_keywords": [
+        "now",
+        "imagine",
+        "point"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "step_through",
+          "subcategory_label": "Step Through",
+          "act": 2,
+          "description": "Step Through: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "result",
+            "matter",
+            "change",
+            "start"
+          ]
+        },
+        {
+          "subcategory_id": "before_after",
+          "subcategory_label": "Before / After",
+          "act": 2,
+          "description": "Before / After: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "start",
+            "work",
+            "so",
+            "then"
+          ]
+        },
+        {
+          "subcategory_id": "live_use",
+          "subcategory_label": "Live Use",
+          "act": 2,
+          "description": "Live Use: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "then",
+            "here",
+            "look",
+            "watch"
+          ]
+        },
+        {
+          "subcategory_id": "time_lapse",
+          "subcategory_label": "Time Lapse",
+          "act": 2,
+          "description": "Time Lapse: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "watch",
+            "now",
+            "this",
+            "really"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "mechanism",
+      "category_label": "Mechanism",
+      "description": "Explains how or why something works, exposing the underlying principle that makes a claim credible.",
+      "example_keywords": [
+        "this",
+        "notice",
+        "result"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "how_it_works",
+          "subcategory_label": "How It Works",
+          "act": 2,
+          "description": "How It Works: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "start",
+            "work",
+            "so",
+            "then"
+          ]
+        },
+        {
+          "subcategory_id": "science_note",
+          "subcategory_label": "Science Note",
+          "act": 2,
+          "description": "Science Note: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "then",
+            "here",
+            "look",
+            "watch"
+          ]
+        },
+        {
+          "subcategory_id": "component_view",
+          "subcategory_label": "Component View",
+          "act": 2,
+          "description": "Component View: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "watch",
+            "now",
+            "this",
+            "really"
+          ]
+        },
+        {
+          "subcategory_id": "cause_effect",
+          "subcategory_label": "Cause And Effect",
+          "act": 2,
+          "description": "Cause And Effect: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "really",
+            "actually",
+            "because",
+            "imagine"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "evidence",
+      "category_label": "Evidence",
+      "description": "Presents support intended to move a claim from assertion toward something the viewer can trust.",
+      "example_keywords": [
+        "really",
+        "try",
+        "matter"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "testimonial",
+          "subcategory_label": "Testimonial",
+          "act": 2,
+          "description": "Testimonial: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "then",
+            "here",
+            "look",
+            "watch"
+          ]
+        },
+        {
+          "subcategory_id": "figure_stat",
+          "subcategory_label": "Figure / Stat",
+          "act": 2,
+          "description": "Figure / Stat: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "watch",
+            "now",
+            "this",
+            "really"
+          ]
+        },
+        {
+          "subcategory_id": "authority",
+          "subcategory_label": "Authority",
+          "act": 2,
+          "description": "Authority: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "really",
+            "actually",
+            "because",
+            "imagine"
+          ]
+        },
+        {
+          "subcategory_id": "demonstrated_result",
+          "subcategory_label": "Demonstrated Result",
+          "act": 2,
+          "description": "Demonstrated Result: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "imagine",
+            "notice",
+            "try",
+            "see"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "objection",
+      "category_label": "Objection Handling",
+      "description": "Surfaces a likely doubt and addresses it directly before it becomes a reason to disengage.",
+      "example_keywords": [
+        "actually",
+        "see",
+        "change"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "myth_bust",
+          "subcategory_label": "Myth Bust",
+          "act": 2,
+          "description": "Myth Bust: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "watch",
+            "now",
+            "this",
+            "really"
+          ]
+        },
+        {
+          "subcategory_id": "concession",
+          "subcategory_label": "Concession",
+          "act": 2,
+          "description": "Concession: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "really",
+            "actually",
+            "because",
+            "imagine"
+          ]
+        },
+        {
+          "subcategory_id": "comparison",
+          "subcategory_label": "Comparison",
+          "act": 2,
+          "description": "Comparison: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "imagine",
+            "notice",
+            "try",
+            "see"
+          ]
+        },
+        {
+          "subcategory_id": "edge_case",
+          "subcategory_label": "Edge Case",
+          "act": 2,
+          "description": "Edge Case: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "see",
+            "point",
+            "result",
+            "matter"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "feature_tour",
+      "category_label": "Feature Tour",
+      "description": "Walks through notable capabilities, one at a time or as a rapid montage.",
+      "example_keywords": [
+        "because",
+        "point",
+        "start"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "single_feature",
+          "subcategory_label": "Single Feature",
+          "act": 2,
+          "description": "Single Feature: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "really",
+            "actually",
+            "because",
+            "imagine"
+          ]
+        },
+        {
+          "subcategory_id": "multi_feature",
+          "subcategory_label": "Multiple Features",
+          "act": 2,
+          "description": "Multiple Features: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "imagine",
+            "notice",
+            "try",
+            "see"
+          ]
+        },
+        {
+          "subcategory_id": "hidden_detail",
+          "subcategory_label": "Hidden Detail",
+          "act": 2,
+          "description": "Hidden Detail: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "see",
+            "point",
+            "result",
+            "matter"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "value_frame",
+      "category_label": "Value Framing",
+      "description": "Connects capability to what the viewer actually gets, in their terms.",
+      "example_keywords": [
+        "imagine",
+        "result",
+        "work"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "benefit",
+          "subcategory_label": "Benefit",
+          "act": 2,
+          "description": "Benefit: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "imagine",
+            "notice",
+            "try",
+            "see"
+          ]
+        },
+        {
+          "subcategory_id": "value_prop",
+          "subcategory_label": "Value Prop",
+          "act": 2,
+          "description": "Value Prop: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "see",
+            "point",
+            "result",
+            "matter"
+          ]
+        },
+        {
+          "subcategory_id": "use_case",
+          "subcategory_label": "Use Case",
+          "act": 2,
+          "description": "Use Case: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "matter",
+            "change",
+            "start",
+            "work"
+          ]
+        },
+        {
+          "subcategory_id": "outcome",
+          "subcategory_label": "Outcome",
+          "act": 2,
+          "description": "Outcome: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "work",
+            "so",
+            "then",
+            "here"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "comparison_block",
+      "category_label": "Comparison",
+      "description": "Weighs the subject against an alternative, a rival, or a prior version.",
+      "example_keywords": [
+        "notice",
+        "matter",
+        "so"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "head_to_head",
+          "subcategory_label": "Head To Head",
+          "act": 2,
+          "description": "Head To Head: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "see",
+            "point",
+            "result",
+            "matter"
+          ]
+        },
+        {
+          "subcategory_id": "upgrade",
+          "subcategory_label": "Upgrade From",
+          "act": 2,
+          "description": "Upgrade From: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "matter",
+            "change",
+            "start",
+            "work"
+          ]
+        },
+        {
+          "subcategory_id": "tradeoff",
+          "subcategory_label": "Tradeoff",
+          "act": 2,
+          "description": "Tradeoff: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "work",
+            "so",
+            "then",
+            "here"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "turn",
+      "category_label": "Turn / Pivot",
+      "description": "A deliberate shift in direction, emotion, or framing that re-energises the segment.",
+      "example_keywords": [
+        "try",
+        "change",
+        "then"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "reveal",
+          "subcategory_label": "Reveal",
+          "act": 3,
+          "description": "Reveal: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "matter",
+            "change",
+            "start",
+            "work"
+          ]
+        },
+        {
+          "subcategory_id": "reframe",
+          "subcategory_label": "Reframe",
+          "act": 3,
+          "description": "Reframe: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "work",
+            "so",
+            "then",
+            "here"
+          ]
+        },
+        {
+          "subcategory_id": "escalation",
+          "subcategory_label": "Escalation",
+          "act": 3,
+          "description": "Escalation: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "here",
+            "look",
+            "watch",
+            "now"
+          ]
+        },
+        {
+          "subcategory_id": "twist",
+          "subcategory_label": "Twist",
+          "act": 3,
+          "description": "Twist: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "now",
+            "this",
+            "really",
+            "actually"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "tension_release",
+      "category_label": "Tension & Release",
+      "description": "Builds a small tension and then resolves it to keep the viewer emotionally engaged.",
+      "example_keywords": [
+        "see",
+        "start",
+        "here"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "build",
+          "subcategory_label": "Build Up",
+          "act": 2,
+          "description": "Build Up: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "work",
+            "so",
+            "then",
+            "here"
+          ]
+        },
+        {
+          "subcategory_id": "payoff_beat",
+          "subcategory_label": "Payoff Beat",
+          "act": 3,
+          "description": "Payoff Beat: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "here",
+            "look",
+            "watch",
+            "now"
+          ]
+        },
+        {
+          "subcategory_id": "relief",
+          "subcategory_label": "Relief",
+          "act": 3,
+          "description": "Relief: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "now",
+            "this",
+            "really",
+            "actually"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "proof_in_use",
+      "category_label": "Proof In Use",
+      "description": "Shows the subject holding up under realistic conditions rather than a staged ideal.",
+      "example_keywords": [
+        "point",
+        "work",
+        "look"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "real_conditions",
+          "subcategory_label": "Real Conditions",
+          "act": 2,
+          "description": "Real Conditions: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "here",
+            "look",
+            "watch",
+            "now"
+          ]
+        },
+        {
+          "subcategory_id": "stress_test",
+          "subcategory_label": "Stress Test",
+          "act": 2,
+          "description": "Stress Test: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "now",
+            "this",
+            "really",
+            "actually"
+          ]
+        },
+        {
+          "subcategory_id": "long_term",
+          "subcategory_label": "Long Term",
+          "act": 3,
+          "description": "Long Term: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "actually",
+            "because",
+            "imagine",
+            "notice"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "emotional_beat",
+      "category_label": "Emotional Beat",
+      "description": "A moment aimed at feeling rather than information \u2014 warmth, humour, awe, or reassurance.",
+      "example_keywords": [
+        "result",
+        "so",
+        "watch"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "humor",
+          "subcategory_label": "Humour",
+          "act": 2,
+          "description": "Humour: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "now",
+            "this",
+            "really",
+            "actually"
+          ]
+        },
+        {
+          "subcategory_id": "warmth",
+          "subcategory_label": "Warmth",
+          "act": 2,
+          "description": "Warmth: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "actually",
+            "because",
+            "imagine",
+            "notice"
+          ]
+        },
+        {
+          "subcategory_id": "awe",
+          "subcategory_label": "Awe",
+          "act": 2,
+          "description": "Awe: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "notice",
+            "try",
+            "see",
+            "point"
+          ]
+        },
+        {
+          "subcategory_id": "reassurance",
+          "subcategory_label": "Reassurance",
+          "act": 2,
+          "description": "Reassurance: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "point",
+            "result",
+            "matter",
+            "change"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "resolution",
+      "category_label": "Resolution",
+      "description": "Brings a thread to a close or states the outcome the segment was building toward.",
+      "example_keywords": [
+        "matter",
+        "then",
+        "now"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "payoff",
+          "subcategory_label": "Payoff",
+          "act": 3,
+          "description": "Payoff: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "actually",
+            "because",
+            "imagine",
+            "notice"
+          ]
+        },
+        {
+          "subcategory_id": "summary",
+          "subcategory_label": "Summary",
+          "act": 3,
+          "description": "Summary: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "notice",
+            "try",
+            "see",
+            "point"
+          ]
+        },
+        {
+          "subcategory_id": "takeaway",
+          "subcategory_label": "Takeaway",
+          "act": 3,
+          "description": "Takeaway: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "point",
+            "result",
+            "matter",
+            "change"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "transformation",
+      "category_label": "Transformation",
+      "description": "Depicts a change from one state to another across the arc of the segment.",
+      "example_keywords": [
+        "change",
+        "here",
+        "this"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "before_state",
+          "subcategory_label": "Before State",
+          "act": 1,
+          "description": "Before State: a segment whose function within this category is to develop the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "notice",
+            "try",
+            "see",
+            "point"
+          ]
+        },
+        {
+          "subcategory_id": "after_state",
+          "subcategory_label": "After State",
+          "act": 3,
+          "description": "After State: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "point",
+            "result",
+            "matter",
+            "change"
+          ]
+        },
+        {
+          "subcategory_id": "journey",
+          "subcategory_label": "Journey",
+          "act": 2,
+          "description": "Journey: a segment whose function within this category is to pay off the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "change",
+            "start",
+            "work",
+            "so"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "social_proof",
+      "category_label": "Social Proof",
+      "description": "Signals that others \u2014 peers, experts, or crowds \u2014 already trust or use the subject.",
+      "example_keywords": [
+        "start",
+        "look",
+        "really"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "crowd",
+          "subcategory_label": "Crowd",
+          "act": 3,
+          "description": "Crowd: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "point",
+            "result",
+            "matter",
+            "change"
+          ]
+        },
+        {
+          "subcategory_id": "expert_nod",
+          "subcategory_label": "Expert Nod",
+          "act": 3,
+          "description": "Expert Nod: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "change",
+            "start",
+            "work",
+            "so"
+          ]
+        },
+        {
+          "subcategory_id": "peer_review",
+          "subcategory_label": "Peer Review",
+          "act": 3,
+          "description": "Peer Review: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "so",
+            "then",
+            "here",
+            "look"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "closing_prompt",
+      "category_label": "Closing Prompt",
+      "description": "Invites the viewer toward a next action or a lingering thought.",
+      "example_keywords": [
+        "work",
+        "watch",
+        "actually"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "invitation",
+          "subcategory_label": "Invitation",
+          "act": 3,
+          "description": "Invitation: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "change",
+            "start",
+            "work",
+            "so"
+          ]
+        },
+        {
+          "subcategory_id": "reflection",
+          "subcategory_label": "Reflection",
+          "act": 3,
+          "description": "Reflection: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "so",
+            "then",
+            "here",
+            "look"
+          ]
+        },
+        {
+          "subcategory_id": "signoff",
+          "subcategory_label": "Sign Off",
+          "act": 3,
+          "description": "Sign Off: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "look",
+            "watch",
+            "now",
+            "this"
+          ]
+        },
+        {
+          "subcategory_id": "next_step",
+          "subcategory_label": "Next Step",
+          "act": 3,
+          "description": "Next Step: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "recap",
+      "category_label": "Recap",
+      "description": "Compresses what was covered into a form the viewer can carry away.",
+      "example_keywords": [
+        "so",
+        "now",
+        "because"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "bullet_recap",
+          "subcategory_label": "Bullet Recap",
+          "act": 3,
+          "description": "Bullet Recap: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "so",
+            "then",
+            "here",
+            "look"
+          ]
+        },
+        {
+          "subcategory_id": "one_line",
+          "subcategory_label": "One Line",
+          "act": 3,
+          "description": "One Line: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "look",
+            "watch",
+            "now",
+            "this"
+          ]
+        },
+        {
+          "subcategory_id": "checklist",
+          "subcategory_label": "Checklist",
+          "act": 3,
+          "description": "Checklist: a segment whose function within this category is to close out the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "b_roll",
+      "category_label": "B-Roll & Visuals",
+      "description": "Segments with little or no spoken content, carried by imagery or on-screen text.",
+      "example_keywords": [
+        "then",
+        "this",
+        "imagine"
+      ],
+      "subcategories": [
+        {
+          "subcategory_id": "general_visual",
+          "subcategory_label": "General Visual",
+          "act": 0,
+          "description": "General Visual: a segment whose function within this category is to set up the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "look",
+            "watch",
+            "now",
+            "this"
+          ]
+        },
+        {
+          "subcategory_id": "text_on_screen",
+          "subcategory_label": "Text On Screen",
+          "act": 0,
+          "description": "Text On Screen: a segment whose function within this category is to set up the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "this",
+            "really",
+            "actually",
+            "because"
+          ]
+        },
+        {
+          "subcategory_id": "ambient",
+          "subcategory_label": "Ambient",
+          "act": 0,
+          "description": "Ambient: a segment whose function within this category is to set up the idea; use when the scene clearly serves this role and not merely adjacent to it.",
+          "example_keywords": [
+            "because",
+            "imagine",
+            "notice",
+            "try"
+          ]
+        }
+      ]
+    }
+  ]
+}
