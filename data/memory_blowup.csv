@@ -1,0 +1,7 @@
+concurrency,total_rss_gb,per_worker_gb,cap_gb,exceeds_cap,oom_killed,backend
+2,2.4468,1.2234,3.0,False,false,real-whisper
+3,3.1885,1.0628,3.0,True,false,real-whisper
+4,3.2212,0.8053,3.0,True,true,real-whisper
+5,3.2212,0.6442,3.0,True,true,real-whisper
+6,3.2212,0.5369,3.0,True,true,real-whisper
+8,3.2212,0.4027,3.0,True,true,real-whisper

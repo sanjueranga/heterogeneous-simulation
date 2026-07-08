@@ -1,0 +1,3 @@
+config,p_hit,cost,pct_saving
+caching_off,0.0,0.046205,0.0
+caching_on_warm,0.8333,0.015656,66.12

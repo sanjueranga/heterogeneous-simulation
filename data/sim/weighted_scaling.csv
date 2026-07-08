@@ -1,0 +1,3 @@
+signal,heavy_p95_min,api_p95_min,general_p95_min,node_hours,mean_nodes,max_nodes,spot_frac,cost
+raw,2.2333,0.2597,0.3609,7.0972,4.7271,10,0.7885,0.5655
+weighted,2.2333,0.2597,0.3607,2.2625,1.5069,2,0.3364,0.2754
